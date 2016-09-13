@@ -29,14 +29,12 @@ body {
 			line-height: 20px;
 		}
 			.nav li a {
-				display: block;
+				display: inline-block;
 				color: black;
 				text-decoration: none;
-				padding: 20px 10px;
+				padding: 10px;
 			}
-			.nav li a:hover {
-				padding-top: 5px;
-				padding-bottom: 5px;
+			.correct:hover {
 				border-top: 3px solid #2aacc8;
 				color: #2aacc8;
 				background-color: white;
@@ -55,6 +53,7 @@ body {
 		    font-weight: 700;
 			line-height: 20px;
 		    background-color: white;
+		    padding: 0;
 		   }
 
 					ul.subnav > li {
@@ -63,13 +62,15 @@ body {
 					}
 
 					ul.subnav > li .smiley {
-					    border-radius: 1em;
+					border-radius: 1em;
 					-webkit-box-shadow: 0 0 0 .4em #2C2C2C, inset 0 0 0 .1em #2C2C2C;
 					box-shadow: 0 0 0 .4em #2C2C2C, inset 0 0 0 .1em #2C2C2C;
 					height: 2em;
 					position: relative;
 					width: 2em;
 					margin-top: 0.3em;
+					display: inline-block;
+					vertical-align: middle;
 					}
 					 
 					.smiley::after, .smiley::before {
@@ -143,9 +144,13 @@ span {
 		padding-bottom: 20px;
 		height: 100%;
 	}
-			.foil img  {
+			.mainpic{
+				text-align: right;
 				width: 100%;
 				background-color: #dd5835;
+				display: block;
+				margin: 0 auto;
+				max-width: 1000px;
 			}
 			.foil ul {
 				text-align: center;
@@ -195,8 +200,8 @@ span {
 				border-radius: 50%;
 				background-position: center;
 				margin-right: 5%;
-				vertical-align: top;
-				margin-bottom: 5%;
+				vertical-align: middle;
+				margin-bottom: 2%;
 			}
 
 			h6.pencil:before {
@@ -231,6 +236,7 @@ span {
 
 		.next a {
 			color: #2aacc8;
+			text-decoration: none;
 		}
 
 		.next a:before {
@@ -260,13 +266,15 @@ span {
 
 			.latest li {
 			display: inline-block;
-			height: 15px;
-			width: 15px;
+			height: 20px;
+			width: 20px;
 			background-color: #2aacc8;
 			border-radius: 50%;
 			font-weight: 700;
 			margin: 5px; 
 			text-align: center;
+			font-size: 12px;
+    		line-height: 20px;
 			}
 			.latest h6:before {
 				content: "";
@@ -282,9 +290,16 @@ span {
 				width: 200px;
 				display: inline;
 			}
+		.border{
+			margin-top: 20px;
+			border-top: 1px solid #dfe1e5;
+			border-bottom: 1px solid #dfe1e5;	
+		}
 
 		.pic {
 			text-align: center;
+			display: flex;
+			justify-content: space-between;
 		}
 
 		.gallery {
